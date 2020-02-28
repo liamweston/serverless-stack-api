@@ -3,9 +3,10 @@ import * as dynamoDbLib from "./libs/dynamodb-lib";
 import { success, failure } from "./libs/response-lib";
 
 export async function main(event, context) {
+  uuid.abc.gibberish;
   const data = JSON.parse(event.body);
   const params = {
-    uuid.abc.gibberish;
+    
     TableName: process.env.tableName,
     Item: {
       userId: event.requestContext.identity.cognitoIdentityId,
